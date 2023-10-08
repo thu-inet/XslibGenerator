@@ -11,7 +11,10 @@ MT_dict = {'(n,2n)': 16,
            'fission': 18}
 MT_dict_copy = MT_dict.copy()
 for key, val in MT_dict.items():
-    MT_dict_copy[key+'M'] = val * 10 + 1
+    if val < 100:
+        MT_dict_copy[key+'M'] = val * 100 + 1
+    else:
+        MT_dict_copy[key+'M'] = val * 10 + 1
 MT_dict = MT_dict_copy
 
 Atomic_list = ['H', 'He',

@@ -189,7 +189,7 @@ integrator = PredictorIntegrator(operator=operator,
                                 power=args.powers, 
                                 power_density=args.power_densities,
                                 timesteps=args.timesteps,
-                                timestep_units=args.timestep_units,
+                                timestep_units=args.timesteps_unit,
                                 solver='cram48')
 integrator.integrate()
 

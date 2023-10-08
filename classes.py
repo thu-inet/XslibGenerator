@@ -36,7 +36,9 @@ class Nuclide():
         return reaction
 
     def __getitem__(self, rec_name):
-        return self.check_reaction(rec_name)
+        if isinstance(rec_name, int):
+            rec_name = [name for name, MT in MT_dict.items() if MT == rec_name][0]
+        return self.check_reaction(rec_name, initiate=False)
 
     def set_reaction(self, rec_name):
         self.reactions.append(Reaction(rec_name))
@@ -116,7 +118,7 @@ class XSLIB():
     
     def __getitem__(self, nuc_name):
         return self.check_nuclide(nuc_name, initiate=False)
-    
+
     def set_den(self, nuc_name, den):
         nuclide = self.check_nuclide(nuc_name)
         nuclide.den = den
