@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<materials>
+  <material depletable="true" id="1" name="pellet" temperature="293" volume="5.268144574786358">
+    <density units="g/cm3" value="10.4" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.04504363506456142" name="U235" />
+    <nuclide ao="0.9549563649354386" name="U238" />
+  </material>
+  <material id="2" name="clad" temperature="293">
+    <density units="g/cm3" value="6.62112" />
+    <nuclide name="O16" wo="0.0011961722488038277" />
+    <nuclide name="Cr50" wo="0.000996810207336523" />
+    <nuclide name="Fe56" wo="0.001993620414673046" />
+    <nuclide name="Zr90" wo="0.9818580542264753" />
+    <nuclide name="Sn118" wo="0.013955342902711323" />
+  </material>
+  <material depletable="true" id="3" name="h2o" temperature="293" volume="8.748550142084174">
+    <density units="g/cm3" value="1" />
+    <nuclide ao="2.0" name="H1" />
+    <nuclide ao="0.0001651780436684349" name="B10" />
+    <nuclide ao="0.0006682126912883506" name="B11" />
+    <nuclide ao="1.0" name="O16" />
+    <sab name="c_H_in_H2O" />
+  </material>
+  <material id="4" name="helium" temperature="293">
+    <density units="g/cm3" value="0.0050178" />
+    <nuclide ao="1.0" name="He4" />
+  </material>
+  <material depletable="true" id="11" name="moxpellet" temperature="293" volume="5.268144574786358">
+    <density units="g/cm3" value="10.4" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.0017574" name="U235" />
+    <nuclide ao="0.8769426" name="U238" />
+    <nuclide ao="0.0032751000000000004" name="Pu238" />
+    <nuclide ao="0.06192365" name="Pu239" />
+    <nuclide ao="0.02937886" name="Pu240" />
+    <nuclide ao="0.015526400000000001" name="Pu241" />
+    <nuclide ao="0.0088549" name="Pu242" />
+    <nuclide ao="0.0023289599999999997" name="Am241" />
+  </material>
+</materials>

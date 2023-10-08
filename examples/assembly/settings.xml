@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<settings>
+  <run_mode>eigenvalue</run_mode>
+  <particles>100</particles>
+  <batches>10</batches>
+  <inactive>2</inactive>
+  <source strength="1.0">
+    <space origin="0.0 0.0 0.0" type="cylindrical">
+      <r parameters="0 10.752 0" type="powerlaw" />
+      <phi parameters="0 6.283185307179586" type="uniform" />
+      <z parameters="0 365.76" type="uniform" />
+    </space>
+  </source>
+  <temperature_default>600</temperature_default>
+  <temperature_method>interpolation</temperature_method>
+</settings>

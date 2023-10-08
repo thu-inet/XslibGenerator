@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<tallies>
+  <filter id="1" type="energy">
+    <bins>0.00011 4.0 9118.0 19600000.0</bins>
+  </filter>
+  <tally id="1" name="flux">
+    <filters>1</filters>
+    <scores>flux</scores>
+  </tally>
+  <tally id="2" name="fiss. rate">
+    <filters>1</filters>
+    <scores>nu-fission</scores>
+  </tally>
+  <tally id="3" name="abs. rate">
+    <filters>1</filters>
+    <scores>absorption</scores>
+  </tally>
+</tallies>

@@ -1,0 +1,1804 @@
+<?xml version='1.0' encoding='utf-8'?>
+<materials>
+  <material id="2" name="z4alloy" temperature="613">
+    <density units="g/cm3" value="6.55" />
+    <nuclide ao="0.00030744" name="O16" />
+    <nuclide ao="0.021828" name="Zr90" />
+    <nuclide ao="0.0047601" name="Zr91" />
+    <nuclide ao="0.0072759" name="Zr92" />
+    <nuclide ao="0.0073734" name="Zr94" />
+    <nuclide ao="0.0011879" name="Zr96" />
+    <nuclide ao="3.2962e-06" name="Cr50" />
+    <nuclide ao="6.3564e-05" name="Cr52" />
+    <nuclide ao="7.2076e-06" name="Cr53" />
+    <nuclide ao="1.7941e-06" name="Cr54" />
+    <nuclide ao="8.6698e-06" name="Fe54" />
+    <nuclide ao="0.0001361" name="Fe56" />
+    <nuclide ao="3.1431e-06" name="Fe57" />
+    <nuclide ao="4.1829e-07" name="Fe58" />
+    <nuclide ao="1.168e-07" name="O17" />
+    <nuclide ao="6.1648e-07" name="O18" />
+    <nuclide ao="4.6735e-06" name="Sn112" />
+    <nuclide ao="3.1799e-06" name="Sn114" />
+    <nuclide ao="1.6381e-06" name="Sn115" />
+    <nuclide ao="7.0055e-05" name="Sn116" />
+    <nuclide ao="3.7003e-05" name="Sn117" />
+    <nuclide ao="0.00011669" name="Sn118" />
+    <nuclide ao="4.1387e-05" name="Sn119" />
+    <nuclide ao="0.00015697" name="Sn120" />
+    <nuclide ao="2.2308e-05" name="Sn122" />
+    <nuclide ao="2.7897e-05" name="Sn124" />
+  </material>
+  <material id="3" name="m5alloy" temperature="613">
+    <density units="g/cm3" value="6.65" />
+    <nuclide ao="0.007140932859659811" name="O16" />
+    <nuclide ao="0.5057435772477278" name="Zr90" />
+    <nuclide ao="0.11029043608784267" name="Zr91" />
+    <nuclide ao="0.16858119241590927" name="Zr92" />
+    <nuclide ao="0.17084204805763867" name="Zr94" />
+    <nuclide ao="0.027523459986270902" name="Zr96" />
+    <nuclide ao="0.009861321684170964" name="Nb93" />
+    <nuclide ao="2.7128685532466637e-06" name="O17" />
+    <nuclide ao="1.4318792226687667e-05" name="O18" />
+  </material>
+  <material id="4" name="SS304">
+    <density units="g/cm3" value="8.03" />
+    <nuclide ao="0.00076778" name="Cr50" />
+    <nuclide ao="0.014806" name="Cr52" />
+    <nuclide ao="0.0016789" name="Cr53" />
+    <nuclide ao="0.00041791" name="Cr54" />
+    <nuclide ao="0.003462" name="Fe54" />
+    <nuclide ao="0.054345" name="Fe56" />
+    <nuclide ao="0.0012551" name="Fe57" />
+    <nuclide ao="0.00016703" name="Fe58" />
+    <nuclide ao="0.0017604" name="Mn55" />
+    <nuclide ao="0.0056089" name="Ni58" />
+    <nuclide ao="0.0021605" name="Ni60" />
+    <nuclide ao="9.3917e-05" name="Ni61" />
+    <nuclide ao="0.00029945" name="Ni62" />
+    <nuclide ao="7.6261e-05" name="Ni64" />
+    <nuclide ao="0.00095281" name="Si28" />
+    <nuclide ao="4.8381e-05" name="Si29" />
+    <nuclide ao="3.1893e-05" name="Si30" />
+  </material>
+  <material id="5" name="helium" temperature="768.5">
+    <density units="g/cm3" value="0.0019324" />
+    <nuclide ao="1.0" name="He4" />
+  </material>
+  <material id="6" name="h2o" temperature="583.7">
+    <density units="g/cm3" value="0.7035132943032633" />
+    <nuclide ao="0.000198071981170198" name="B10" />
+    <nuclide ao="0.0008012821115149585" name="B11" />
+    <nuclide ao="0.9990006459073149" name="O16" />
+    <nuclide ao="1.9980012918146297" name="H1" />
+    <sab name="c_H_in_H2O" />
+  </material>
+  <material depletable="true" id="9" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="10" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="11" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="12" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="13" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="14" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="15" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="16" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="17" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="18" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="19" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="20" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="21" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="22" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="23" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="24" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="25" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="26" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="27" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="28" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="29" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="30" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="31" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="32" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="33" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="34" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="35" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="36" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="37" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="38" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="39" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="40" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="41" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="42" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="43" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="44" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="45" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="46" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="47" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="48" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="49" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="50" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="51" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="52" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="53" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="54" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="55" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="56" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="57" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="58" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="59" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="60" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="61" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="62" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="63" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="64" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="65" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="66" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="67" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="68" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="69" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="70" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="71" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="72" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="73" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="74" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="75" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="76" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="77" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="78" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="79" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="80" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="81" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="82" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="83" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="84" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="85" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="86" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="87" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="88" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="89" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="90" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="91" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="92" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="93" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="94" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="95" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="96" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="97" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="98" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="99" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="100" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="101" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="102" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="103" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="104" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="105" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="106" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="107" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="108" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="109" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="110" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="111" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="112" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="113" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="114" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="115" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="116" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="117" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="118" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="119" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="120" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="121" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="122" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="123" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="124" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="125" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="126" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="127" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="128" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="129" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="130" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="131" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="132" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="133" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="134" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="135" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="136" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="137" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="138" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="139" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="140" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="141" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="142" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="143" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="144" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="145" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="146" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="147" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="148" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="149" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="150" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="151" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="152" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="153" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="154" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="155" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="156" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="157" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="158" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="159" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="160" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="161" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="162" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="163" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="164" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="165" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="166" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="167" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="168" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="169" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="170" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="171" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="172" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="173" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="174" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="175" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="176" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="177" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="178" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="179" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="180" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="181" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="182" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="183" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="184" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="185" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="186" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="187" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="188" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="189" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="190" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="191" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="192" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="193" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="194" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="195" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="196" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="197" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="198" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="199" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="200" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="201" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="202" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="203" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="204" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="205" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="206" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="207" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="208" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="209" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="210" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="211" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="212" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="213" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="214" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="215" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="216" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="217" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="218" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="219" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="220" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="221" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="222" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="223" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="224" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="225" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="226" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="227" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="228" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="229" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="230" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="231" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="232" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="233" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="234" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="235" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="236" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="237" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="238" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="239" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="240" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="241" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="242" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="243" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="244" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="245" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="246" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="247" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="248" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="249" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="250" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="251" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="252" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="253" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="254" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="255" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="256" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="257" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="258" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="259" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="260" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="261" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="262" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="263" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="264" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="265" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="266" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="267" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="268" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="269" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="270" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="271" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="272" name="pellet" temperature="924" volume="192.78177620335833">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="2.0" name="O16" />
+    <nuclide ao="0.024299565408183652" name="U235" />
+    <nuclide ao="0.9757004345918163" name="U238" />
+  </material>
+  <material depletable="true" id="273" name="borosilicate" temperature="900.1" volume="35.582145557227">
+    <density units="g/cm3" value="2.26" />
+    <nuclide ao="0.0028457471918835685" name="B10" />
+    <nuclide ao="0.01041783136710679" name="B11" />
+    <nuclide ao="0.6879868095166806" name="O16" />
+    <nuclide ao="0.025665277376130714" name="Al27" />
+    <nuclide ao="0.0002613710906602155" name="O17" />
+    <nuclide ao="0.0013795234499290915" name="O18" />
+    <nuclide ao="0.2503518239213857" name="Si28" />
+    <nuclide ao="0.012711944437610525" name="Si29" />
+    <nuclide ao="0.008379671648612896" name="Si30" />
+  </material>
+  <material depletable="true" id="274" name="borosilicate" temperature="900.1" volume="35.582145557227">
+    <density units="g/cm3" value="2.26" />
+    <nuclide ao="0.0028457471918835685" name="B10" />
+    <nuclide ao="0.01041783136710679" name="B11" />
+    <nuclide ao="0.6879868095166806" name="O16" />
+    <nuclide ao="0.025665277376130714" name="Al27" />
+    <nuclide ao="0.0002613710906602155" name="O17" />
+    <nuclide ao="0.0013795234499290915" name="O18" />
+    <nuclide ao="0.2503518239213857" name="Si28" />
+    <nuclide ao="0.012711944437610525" name="Si29" />
+    <nuclide ao="0.008379671648612896" name="Si30" />
+  </material>
+  <material depletable="true" id="275" name="borosilicate" temperature="900.1" volume="35.582145557227">
+    <density units="g/cm3" value="2.26" />
+    <nuclide ao="0.0028457471918835685" name="B10" />
+    <nuclide ao="0.01041783136710679" name="B11" />
+    <nuclide ao="0.6879868095166806" name="O16" />
+    <nuclide ao="0.025665277376130714" name="Al27" />
+    <nuclide ao="0.0002613710906602155" name="O17" />
+    <nuclide ao="0.0013795234499290915" name="O18" />
+    <nuclide ao="0.2503518239213857" name="Si28" />
+    <nuclide ao="0.012711944437610525" name="Si29" />
+    <nuclide ao="0.008379671648612896" name="Si30" />
+  </material>
+  <material depletable="true" id="276" name="borosilicate" temperature="900.1" volume="35.582145557227">
+    <density units="g/cm3" value="2.26" />
+    <nuclide ao="0.0028457471918835685" name="B10" />
+    <nuclide ao="0.01041783136710679" name="B11" />
+    <nuclide ao="0.6879868095166806" name="O16" />
+    <nuclide ao="0.025665277376130714" name="Al27" />
+    <nuclide ao="0.0002613710906602155" name="O17" />
+    <nuclide ao="0.0013795234499290915" name="O18" />
+    <nuclide ao="0.2503518239213857" name="Si28" />
+    <nuclide ao="0.012711944437610525" name="Si29" />
+    <nuclide ao="0.008379671648612896" name="Si30" />
+  </material>
+  <material depletable="true" id="277" name="borosilicate" temperature="900.1" volume="35.582145557227">
+    <density units="g/cm3" value="2.26" />
+    <nuclide ao="0.0028457471918835685" name="B10" />
+    <nuclide ao="0.01041783136710679" name="B11" />
+    <nuclide ao="0.6879868095166806" name="O16" />
+    <nuclide ao="0.025665277376130714" name="Al27" />
+    <nuclide ao="0.0002613710906602155" name="O17" />
+    <nuclide ao="0.0013795234499290915" name="O18" />
+    <nuclide ao="0.2503518239213857" name="Si28" />
+    <nuclide ao="0.012711944437610525" name="Si29" />
+    <nuclide ao="0.008379671648612896" name="Si30" />
+  </material>
+  <material depletable="true" id="278" name="borosilicate" temperature="900.1" volume="35.582145557227">
+    <density units="g/cm3" value="2.26" />
+    <nuclide ao="0.0028457471918835685" name="B10" />
+    <nuclide ao="0.01041783136710679" name="B11" />
+    <nuclide ao="0.6879868095166806" name="O16" />
+    <nuclide ao="0.025665277376130714" name="Al27" />
+    <nuclide ao="0.0002613710906602155" name="O17" />
+    <nuclide ao="0.0013795234499290915" name="O18" />
+    <nuclide ao="0.2503518239213857" name="Si28" />
+    <nuclide ao="0.012711944437610525" name="Si29" />
+    <nuclide ao="0.008379671648612896" name="Si30" />
+  </material>
+  <material depletable="true" id="279" name="borosilicate" temperature="900.1" volume="35.582145557227">
+    <density units="g/cm3" value="2.26" />
+    <nuclide ao="0.0028457471918835685" name="B10" />
+    <nuclide ao="0.01041783136710679" name="B11" />
+    <nuclide ao="0.6879868095166806" name="O16" />
+    <nuclide ao="0.025665277376130714" name="Al27" />
+    <nuclide ao="0.0002613710906602155" name="O17" />
+    <nuclide ao="0.0013795234499290915" name="O18" />
+    <nuclide ao="0.2503518239213857" name="Si28" />
+    <nuclide ao="0.012711944437610525" name="Si29" />
+    <nuclide ao="0.008379671648612896" name="Si30" />
+  </material>
+  <material depletable="true" id="280" name="borosilicate" temperature="900.1" volume="35.582145557227">
+    <density units="g/cm3" value="2.26" />
+    <nuclide ao="0.0028457471918835685" name="B10" />
+    <nuclide ao="0.01041783136710679" name="B11" />
+    <nuclide ao="0.6879868095166806" name="O16" />
+    <nuclide ao="0.025665277376130714" name="Al27" />
+    <nuclide ao="0.0002613710906602155" name="O17" />
+    <nuclide ao="0.0013795234499290915" name="O18" />
+    <nuclide ao="0.2503518239213857" name="Si28" />
+    <nuclide ao="0.012711944437610525" name="Si29" />
+    <nuclide ao="0.008379671648612896" name="Si30" />
+  </material>
+  <material depletable="true" id="281" name="borosilicate" temperature="900.1" volume="35.582145557227">
+    <density units="g/cm3" value="2.26" />
+    <nuclide ao="0.0028457471918835685" name="B10" />
+    <nuclide ao="0.01041783136710679" name="B11" />
+    <nuclide ao="0.6879868095166806" name="O16" />
+    <nuclide ao="0.025665277376130714" name="Al27" />
+    <nuclide ao="0.0002613710906602155" name="O17" />
+    <nuclide ao="0.0013795234499290915" name="O18" />
+    <nuclide ao="0.2503518239213857" name="Si28" />
+    <nuclide ao="0.012711944437610525" name="Si29" />
+    <nuclide ao="0.008379671648612896" name="Si30" />
+  </material>
+  <material depletable="true" id="282" name="borosilicate" temperature="900.1" volume="35.582145557227">
+    <density units="g/cm3" value="2.26" />
+    <nuclide ao="0.0028457471918835685" name="B10" />
+    <nuclide ao="0.01041783136710679" name="B11" />
+    <nuclide ao="0.6879868095166806" name="O16" />
+    <nuclide ao="0.025665277376130714" name="Al27" />
+    <nuclide ao="0.0002613710906602155" name="O17" />
+    <nuclide ao="0.0013795234499290915" name="O18" />
+    <nuclide ao="0.2503518239213857" name="Si28" />
+    <nuclide ao="0.012711944437610525" name="Si29" />
+    <nuclide ao="0.008379671648612896" name="Si30" />
+  </material>
+  <material depletable="true" id="283" name="borosilicate" temperature="900.1" volume="35.582145557227">
+    <density units="g/cm3" value="2.26" />
+    <nuclide ao="0.0028457471918835685" name="B10" />
+    <nuclide ao="0.01041783136710679" name="B11" />
+    <nuclide ao="0.6879868095166806" name="O16" />
+    <nuclide ao="0.025665277376130714" name="Al27" />
+    <nuclide ao="0.0002613710906602155" name="O17" />
+    <nuclide ao="0.0013795234499290915" name="O18" />
+    <nuclide ao="0.2503518239213857" name="Si28" />
+    <nuclide ao="0.012711944437610525" name="Si29" />
+    <nuclide ao="0.008379671648612896" name="Si30" />
+  </material>
+  <material depletable="true" id="284" name="borosilicate" temperature="900.1" volume="35.582145557227">
+    <density units="g/cm3" value="2.26" />
+    <nuclide ao="0.0028457471918835685" name="B10" />
+    <nuclide ao="0.01041783136710679" name="B11" />
+    <nuclide ao="0.6879868095166806" name="O16" />
+    <nuclide ao="0.025665277376130714" name="Al27" />
+    <nuclide ao="0.0002613710906602155" name="O17" />
+    <nuclide ao="0.0013795234499290915" name="O18" />
+    <nuclide ao="0.2503518239213857" name="Si28" />
+    <nuclide ao="0.012711944437610525" name="Si29" />
+    <nuclide ao="0.008379671648612896" name="Si30" />
+  </material>
+</materials>
