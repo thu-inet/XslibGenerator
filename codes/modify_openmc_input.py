@@ -37,10 +37,10 @@ def modify_openmc_input(args: Namespace):
 
     # 将xml文件转储为tmp文件
     info("XslibGenerator: 将xml文件转储为tmp文件...")
-    shutil.copy(str(args.input_path / 'materials.xml'), str(args.input_path / 'materials_tmp.xml'))
-    shutil.copy(str(args.input_path / 'geometry.xml'), str(args.input_path / 'geometry_tmp.xml'))
-    shutil.copy(str(args.input_path / 'tallies.xml'), str(args.input_path / 'tallies_tmp.xml'))
-    shutil.copy(str(args.input_path / 'settings.xml'), str(args.input_path / 'settings_tmp.xml'))
+    shutil.copy(str(args.input_path / 'materials.xml'), str(args.input_path / 'materials_original.xml'))
+    shutil.copy(str(args.input_path / 'geometry.xml'), str(args.input_path / 'geometry_original.xml'))
+    shutil.copy(str(args.input_path / 'tallies.xml'), str(args.input_path / 'tallies_original.xml'))
+    shutil.copy(str(args.input_path / 'settings.xml'), str(args.input_path / 'settings_original.xml'))
     
     # 读取主要xml元素
     info("XslibGenerator: 读取主要xml元素...")
@@ -194,16 +194,16 @@ def modify_openmc_input(args: Namespace):
         files = [file for file in files if file.stat().st_ctime > time_start and (file.suffix in ['.h5', '.out', '.log', '.xml'])]
         for file in files:
             shutil.copy(str(file), str(args.output_path))
-            if '_tmp' not in file.name:
+            if '_original' not in file.name:
                 os.remove(file)
-    shutil.copy(str(args.input_path / 'materials_tmp.xml'), str(args.input_path / 'materials.xml'))
-    shutil.copy(str(args.input_path / 'geometry_tmp.xml'), str(args.input_path / 'geometry.xml'))
-    shutil.copy(str(args.input_path / 'tallies_tmp.xml'), str(args.input_path / 'tallies.xml'))
-    shutil.copy(str(args.input_path / 'settings_tmp.xml'), str(args.input_path / 'settings.xml'))
-    os.remove(str(args.input_path / 'materials_tmp.xml'))
-    os.remove(str(args.input_path / 'geometry_tmp.xml'))
-    os.remove(str(args.input_path / 'tallies_tmp.xml'))
-    os.remove(str(args.input_path / 'settings_tmp.xml'))
+    shutil.copy(str(args.input_path / 'materials_original.xml'), str(args.input_path / 'materials.xml'))
+    shutil.copy(str(args.input_path / 'geometry_original.xml'), str(args.input_path / 'geometry.xml'))
+    shutil.copy(str(args.input_path / 'tallies_original.xml'), str(args.input_path / 'tallies.xml'))
+    shutil.copy(str(args.input_path / 'settings_original.xml'), str(args.input_path / 'settings.xml'))
+    os.remove(str(args.input_path / 'materials_original.xml'))
+    os.remove(str(args.input_path / 'geometry_original.xml'))
+    os.remove(str(args.input_path / 'tallies_original.xml'))
+    os.remove(str(args.input_path / 'settings_original.xml'))
     
 
     info("XslibGenerator: 运行结束")

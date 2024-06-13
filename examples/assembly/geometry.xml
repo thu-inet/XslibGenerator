@@ -60,7 +60,7 @@
   <surface coeffs="0.0 0.0 0.5725" id="17" type="z-cylinder" />
   <surface coeffs="0.0 0.0 0.6225" id="18" type="z-cylinder" />
   <surface boundary="reflective" coeffs="365.76" id="19" type="z-plane" />
-  <surface boundary="reflective" coeffs="0" id="20" type="z-plane" />
+  <surface boundary="reflective" coeffs="0.0" id="20" type="z-plane" />
   <surface coeffs="10.71" id="21" type="x-plane" />
   <surface coeffs="-10.71" id="22" type="x-plane" />
   <surface coeffs="10.71" id="23" type="y-plane" />
