@@ -10,7 +10,7 @@ import openmc.source
 import openmc.mesh
 
 import utils
-import Assembly_E18BP0GD0
+import examples.assembly.input.E18BP0GD0 as E18BP0GD0
 
 '''
 data reference:
@@ -27,7 +27,20 @@ data reference:
 [10] 岭澳核电厂3、4号机组最终安全分析报告第4章——反应堆
 '''
 
-config = Assembly_E18BP0GD0
+assembly = E18BP0GD0.assembly_name
+pellet_number = 0
+poisoned_pellet_number = 0
+borosilicate_number = 0
+for i in range(17):
+    for j in range(17):
+        if assembly[i][j] == 'fuel_pin':
+            pellet_number += 1
+        elif assembly[i][j] == 'gd_fuelpin':
+            poisoned_pellet_number += 1
+        elif assembly[i][j] == 'borosilicate':
+            borosilicate_number += 1
+        else:
+            pass
 
 openmc.config['cross_sections'] = '/home/dodo/nuclear_data/openmc/endfb8/cross_sections.xml'
 openmc.config['chain_file'] = '/home/dodo/nuclear_data/openmc/chain/chain_casl_pwr_0.12.xml'
@@ -64,11 +77,11 @@ borosilicate_m5alloy_radius = 0.60198       # cm [8]
 # ===================================================
 pellet_temperature = 924  # K [1]
 pellet_density = 10.41  # g/cm3 [1]
-pellet_enrichement = enrichment  # % [1]
+pellet_enrichement = 0.018  # % [1]
 pellet_abundance = utils.enrichment2abundance(pellet_enrichement)  # %
 pellet_u0_atomic_mass = utils.abundance2u0atomicweight(pellet_abundance)  # g/mol
 pellet_uo2_atomic_mass = pellet_u0_atomic_mass + 2 * openmc.data.atomic_weight('O')
-pellet_volume = np.pi * pellet_diameter**2 / 4 * pellet_height * parameters['fuelpin_number']  # cm3
+pellet_volume = np.pi * pellet_diameter**2 / 4 * pellet_height * pellet_number  # cm3
 
 pellet = openmc.Material(name="pellet")
 pellet.add_nuclide('U235', pellet_abundance, 'ao')
@@ -165,7 +178,7 @@ water.temperature = water_temperature
 poisoned_pellet_gd2o3_wo = 8.0 * 0.01  # % [1]
 poisoned_pellet_gd2o3_density = 8.33  # g/cm3 [10]P116
 poisoned_pellet_uo2_density = 10.41   # g/cm3 [1]
-poisoned_pellet_volume = np.pi * pellet_diameter**2 / 4 * pellet_height * parameters['poisoned_number']  # cm3
+poisoned_pellet_volume = np.pi * pellet_diameter**2 / 4 * pellet_height * poisoned_pellet_number  # cm3
 poisoned_pellet_density = poisoned_pellet_uo2_density * poisoned_pellet_gd2o3_density / (poisoned_pellet_gd2o3_density * (1 - poisoned_pellet_gd2o3_wo) + poisoned_pellet_uo2_density * poisoned_pellet_gd2o3_wo)
 
 poisoned_pellet_enrichment = 2.5 * 0.01  # % [1]
@@ -192,7 +205,7 @@ gd_pellet.temperature = pellet_temperature
 # ===================================================
 borosilicate_density = 2.26  # g/cm3 [8]
 borosilicate_boron_wo = 0.74 * 0.01  # % [1]
-borosilicate_volume = np.pi * (borosilicate_borosilicate_radius**2 - borosilicate_inner_helium_radius**2) / 4 * pellet_height * parameters['borosilicate_number']  # cm3
+borosilicate_volume = np.pi * (borosilicate_borosilicate_radius**2 - borosilicate_inner_helium_radius**2) / 4 * pellet_height * borosilicate_number  # cm3
 borosilicate_compos = ['Al27',
                         'O16', 'O17', 'O18',
                         'Si28', 'Si29', 'Si30']
@@ -252,7 +265,7 @@ cell_Gd_fuelpin_pellet = openmc.Cell(105, "Gd_fuelpin_pellet", fill=gd_pellet, r
 cell_Gd_fuelpin_air = openmc.Cell(106, "Gd_fuelpin_air", fill=helium, region=+surf_Gd_fuelpin_pellet & -surf_Gd_fuelpin_m5alloy_inner)
 cell_Gd_fuelpin_clad = openmc.Cell(107, "Gd_fuelpin_clad", fill=m5alloy, region=+surf_Gd_fuelpin_m5alloy_inner & -surf_Gd_fuelpin_m5alloy_outer)
 cell_Gd_fuelpin_water = openmc.Cell(108, "Gd_fuelpin_water", fill=water, region=+surf_Gd_fuelpin_m5alloy_outer)
-univ_Gd_fuelpin = openmc.Universe(cells=[cell_Gd_fuelpin_pellet, cell_Gd_fuelpin_air, cell_Gd_fuelpin_clad, cell_Gd_fuelpin_water])
+univ_gd_fuelpin = openmc.Universe(cells=[cell_Gd_fuelpin_pellet, cell_Gd_fuelpin_air, cell_Gd_fuelpin_clad, cell_Gd_fuelpin_water])
 
 # guide tube universe
 # ===================================================
@@ -298,15 +311,15 @@ univ_instrument_tube = openmc.Universe(cells=[cell_instrument_tube_inner_water, 
 # lattice defintion and root universe
 # ===================================================
 universes = {'fuel_pin': univ_fuelpin,
-            'gd_fuelpin': univ_Gd_fuelpin,
+            'gd_fuelpin': univ_gd_fuelpin,
             'guide_tube': univ_guide_tube,
             'borosilicate': univ_borosilicate,
             'instrument_tube': univ_instrument_tube}
 
-latt = openmc.RectLattice()
-latt.lower_left = [-lattice_length/2, -lattice_length/2]
-latt.pitch = [lattice_pitch, lattice_pitch]
-latt.universes = [[universes[config.assembly[i, j]] for j in range(lattice_dimension[0])] for i in range(lattice_dimension[1])]
+lattice = openmc.RectLattice()
+lattice.lower_left = [-lattice_length/2, -lattice_length/2]
+lattice.pitch = [lattice_pitch, lattice_pitch]
+lattice.universes = [[universes[assembly[i][j]] for j in range(lattice_dimension[0])] for i in range(lattice_dimension[1])]
 
 surf_lattice_above = openmc.ZPlane(z0=pellet_height, boundary_type='reflective')
 surf_lattice_below = openmc.ZPlane(z0=0, boundary_type='reflective')
@@ -323,7 +336,7 @@ surf_assembly_south = openmc.YPlane(y0=-assembly_pitch/2, boundary_type='reflect
 lattice_space = -surf_lattice_east & +surf_lattice_west & -surf_lattice_north & +surf_lattice_south & -surf_lattice_above & +surf_lattice_below
 total_space = -surf_assembly_east & +surf_assembly_west & -surf_assembly_north & +surf_assembly_south & -surf_lattice_above & +surf_lattice_below
 
-cell_lattice = openmc.Cell(fill=latt, region=lattice_space)
+cell_lattice = openmc.Cell(fill=lattice, region=lattice_space)
 cell_water_gap = openmc.Cell(fill=water, region=total_space & ~lattice_space)
 
 univ_root = openmc.Universe(cells=[cell_lattice, cell_water_gap])

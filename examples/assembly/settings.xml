@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <settings>
   <run_mode>eigenvalue</run_mode>
-  <particles>100</particles>
+  <particles>1000</particles>
   <batches>10</batches>
-  <inactive>2</inactive>
+  <inactive>5</inactive>
   <source strength="1.0">
     <space origin="0.0 0.0 0.0" type="cylindrical">
       <r parameters="0.0 10.752 0.0" type="powerlaw" />
