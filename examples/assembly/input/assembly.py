@@ -360,3 +360,5 @@ settings.source = openmc.source.Source(space=initial_source)
 settings.temperature['default'] = 600
 settings.temperature['method'] = 'interpolation'
 settings.export_to_xml()
+
+# openmc.run()
