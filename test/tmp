@@ -1,0 +1,4 @@
+Var1 {{ X1:str }}
+Var4 {{ x:var }}
+Var2 {{ X2_X2:float }}
+Var3 {{ 3_X3_X3:int }}

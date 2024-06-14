@@ -1,1 +1,24 @@
-{"database_list": [["pwr", "/home/dodo/RSAG/zhangweij/openmc/NuitXsLibGenerator/examples/pin/input/pin.py", [["number_of_rod", "int"], ["temperature", "float"]]]]}
+{
+  "database_list": [
+    {
+      "name": "pwr6",
+      "template": "/home/dodo/RSAG/zhangweij/openmc/NuitXsLibGenerator/test/tmp",
+      "path": "/home/dodo/RSAG/zhangweij/openmc/NuitXsLibGenerator/test",
+      "parameters": [
+        {
+          "name": "X1",
+          "type": "str"
+        },
+        {
+          "name": "x",
+          "type": "var"
+        },
+        {
+          "name": "X2_X2",
+          "type": "float"
+        }
+      ]
+    }
+  ],
+  "current_db": "pwr6"
+}

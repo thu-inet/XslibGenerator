@@ -42,7 +42,7 @@ def get_args(input_args=None):
         args = parser.parse_args()
     
     args.input_path = Path(args.input_path)
-    args.output_path = Path(args.output_path) if args.output_path is not None else args.input_path.stem / 'output'
+    args.output_path = Path(args.output_path) if args.output_path is not None else args.input_path.parent / 'output'
     args.xslib_path = Path(args.xslib_path) if args.xslib_path is not None else args.output_path / '_xslib.dat'
 
     return args
