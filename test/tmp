@@ -1,3 +1,0 @@
-Var1 {{ str_x1 }}
-Var4 {{ int_x2 }}
-Var2 {{ float_x3 }}
