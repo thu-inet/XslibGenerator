@@ -135,3 +135,40 @@ do
 done
 echo ${powers[@]}
 ```
+
+
+# 单群截面库管理系统
+
+为了方便对基于同一个模型、但参数不同的单群截面库的管理，编写了基于click的单群截面库管理系统。
+
+系统分为两个层级。对基于同一个模型、但参数不同的单群截面库，它们将被统一管理，称为Database，为较低的层级；对于不同的模型对应的不同的Database，它们也被统一管理，为较高的层级。
+
+管理系统和上述单群截面库生成程序互不干扰。管理系统可以读取模板化的OpenMC文件，形成Database，然后根据用户输入参数，产生相应的OpenMC模型和xml输入卡，并记录这一组数据。然后应由截面库生成程序来产生截面库，但这一步还暂未实现。
+
+管理系统储存在codes/cli文件夹内，通过命令行交互。为了方便使用，在下载本库后，使用alias命令（linux系统）将脚本调用封装为更简单的命令：
+
+```
+alias vlib="python the_absolute_path_to_viewlib_file/viewlib.py"
+```
+
+以下展示管理系统的适用方法。
+
+```
+vlib list # 查看所有database
+vlib list -n name # 查看某个database
+vlib create -n name -t template -p path # 创建新database，模板文件位置和文件夹位置 
+vlib remove -n name --remove_all_files y # 删除database和相应文件
+```
+
+需要管理一个database，首先需要进入这个database，然后使用```vlib db```命令。
+
+```
+vlib db template  # 打开template
+vlib db list -t task  # 查看算例
+vlib db remove -t task  # 删除算例
+vlib db run -t task -i x1 -i x2 -i x3  # 运行算例
+```
+
+模板文件只需要将里面的参数替换为```{{type_name}}```形式，type分为int、float和str。
+所有比较难表达的参数如矩阵都可以用str固定下来。
+
