@@ -172,3 +172,6 @@ vlib db run -t task -i x1 -i x2 -i x3  # 运行算例
 模板文件只需要将里面的参数替换为```{{type_name}}```形式，type分为int、float和str。
 所有比较难表达的参数如矩阵都可以用str固定下来。
 
+目前examples里面有一个文件夹pin_database，已经做过一些测试了，基本功能没有问题。
+配置文件有files/manager.json以及每个database下的.libdir.json。如果手动管理文件可能会导致
+配置文件内容和实际文件不同引发报错，所以建议用命令来增加或者删除文件。
