@@ -1,24 +1,24 @@
 {
   "database_list": [
     {
-      "name": "pwr6",
+      "name": "new",
       "template": "/home/dodo/RSAG/zhangweij/openmc/NuitXsLibGenerator/test/tmp",
       "path": "/home/dodo/RSAG/zhangweij/openmc/NuitXsLibGenerator/test",
       "parameters": [
         {
-          "name": "X1",
+          "name": "str_x1",
           "type": "str"
         },
         {
-          "name": "x",
-          "type": "var"
+          "name": "int_x2",
+          "type": "int"
         },
         {
-          "name": "X2_X2",
+          "name": "float_x3",
           "type": "float"
         }
       ]
     }
   ],
-  "current_db": "pwr6"
+  "current_db": "new"
 }

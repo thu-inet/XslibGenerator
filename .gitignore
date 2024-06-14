@@ -1,0 +1,20 @@
+# 不自动提交h5文件
+*.h5
+
+# 不自动提交日志文件
+*.log
+*.out
+
+# 不自动提交xml输入卡
+materials.xml
+geometry.xml
+settings.xml
+tallies.xml
+
+# 不需要提交数据文件夹
+__pycache__/
+.vscode/
+codes/viewlib.py
+
+# 不自动提交shell
+*.sh
