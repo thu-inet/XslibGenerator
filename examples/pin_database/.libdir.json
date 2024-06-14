@@ -1,0 +1,14 @@
+[
+  {
+    "task": "high_3.18",
+    "path": "/home/dodo/RSAG/zhangweij/openmc/NuitXsLibGenerator/examples/pin_database/high_3.18",
+    "float_pellet_temperature": 900.0,
+    "float_pellet_enrichment": 0.0318
+  },
+  {
+    "task": "room_6.18",
+    "path": "/home/dodo/RSAG/zhangweij/openmc/NuitXsLibGenerator/examples/pin_database/room_6.18",
+    "float_pellet_temperature": 293.0,
+    "float_pellet_enrichment": 0.0618
+  }
+]

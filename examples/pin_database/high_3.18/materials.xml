@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<materials>
+  <material depletable="true" id="1" name="pellet" temperature="900.0" volume="5.268144574786358">
+    <density units="g/cm3" value="10.4" />
+    <nuclide ao="0.0318" name="U235" />
+    <nuclide ao="0.9682" name="U238" />
+    <nuclide ao="2.0" name="O16" />
+  </material>
+  <material id="2" name="clad" temperature="293">
+    <density units="g/cm3" value="6.62112" />
+    <nuclide name="Cr50" wo="0.000996810207336523" />
+    <nuclide name="Fe56" wo="0.001993620414673046" />
+    <nuclide name="O16" wo="0.0011961722488038277" />
+    <nuclide name="Sn118" wo="0.013955342902711323" />
+    <nuclide name="Zr90" wo="0.9818580542264753" />
+  </material>
+  <material depletable="true" id="3" name="h2o" temperature="293" volume="8.748550142084174">
+    <density units="g/cm3" value="0.9982368986963948" />
+    <nuclide ao="2.0" name="H1" />
+    <nuclide ao="1.0" name="O16" />
+    <nuclide ao="9.91e-05" name="B10" />
+    <nuclide ao="0.0004009" name="B11" />
+    <sab name="c_H_in_H2O" />
+  </material>
+  <material id="4" name="helium" temperature="293">
+    <density units="g/cm3" value="0.0050178" />
+    <nuclide ao="1.0" name="He4" />
+  </material>
+</materials>

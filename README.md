@@ -163,6 +163,11 @@ vlib remove -n name --remove_all_files y # 删除database和相应文件
 需要管理一个database，首先需要进入这个database，然后使用```vlib db```命令。
 
 ```
+vlib enter -n name  # 进入database
+vlib enter  # 关闭当前database
+```
+
+```
 vlib db template  # 打开template
 vlib db list -t task  # 查看算例
 vlib db remove -t task  # 删除算例
@@ -175,3 +180,4 @@ vlib db run -t task -i x1 -i x2 -i x3  # 运行算例
 目前examples里面有一个文件夹pin_database，已经做过一些测试了，基本功能没有问题。
 配置文件有files/manager.json以及每个database下的.libdir.json。如果手动管理文件可能会导致
 配置文件内容和实际文件不同引发报错，所以建议用命令来增加或者删除文件。
+
