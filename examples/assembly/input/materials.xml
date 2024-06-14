@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<materials>
+  <material depletable="true" id="1" name="pellet" temperature="924" volume="50894.3889176866">
+    <density units="g/cm3" value="10.41" />
+    <nuclide ao="0.01822607259632137" name="U235" />
+    <nuclide ao="0.9817739274036786" name="U238" />
+    <nuclide ao="2.0" name="O16" />
+  </material>
+  <material id="2" name="z4alloy" temperature="613">
+    <density units="g/cm3" value="6.55" />
+    <nuclide ao="3.2962e-06" name="Cr50" />
+    <nuclide ao="6.3564e-05" name="Cr52" />
+    <nuclide ao="7.2076e-06" name="Cr53" />
+    <nuclide ao="1.7941e-06" name="Cr54" />
+    <nuclide ao="8.6698e-06" name="Fe54" />
+    <nuclide ao="0.0001361" name="Fe56" />
+    <nuclide ao="3.1431e-06" name="Fe57" />
+    <nuclide ao="4.1829e-07" name="Fe58" />
+    <nuclide ao="0.00030744" name="O16" />
+    <nuclide ao="1.168e-07" name="O17" />
+    <nuclide ao="6.1648e-07" name="O18" />
+    <nuclide ao="4.6735e-06" name="Sn112" />
+    <nuclide ao="3.1799e-06" name="Sn114" />
+    <nuclide ao="1.6381e-06" name="Sn115" />
+    <nuclide ao="7.0055e-05" name="Sn116" />
+    <nuclide ao="3.7003e-05" name="Sn117" />
+    <nuclide ao="0.00011669" name="Sn118" />
+    <nuclide ao="4.1387e-05" name="Sn119" />
+    <nuclide ao="0.00015697" name="Sn120" />
+    <nuclide ao="2.2308e-05" name="Sn122" />
+    <nuclide ao="2.7897e-05" name="Sn124" />
+    <nuclide ao="0.021828" name="Zr90" />
+    <nuclide ao="0.0047601" name="Zr91" />
+    <nuclide ao="0.0072759" name="Zr92" />
+    <nuclide ao="0.0073734" name="Zr94" />
+    <nuclide ao="0.0011879" name="Zr96" />
+  </material>
+  <material id="3" name="m5alloy" temperature="613">
+    <density units="g/cm3" value="6.65" />
+    <nuclide ao="0.5057435772477278" name="Zr90" />
+    <nuclide ao="0.11029043608784267" name="Zr91" />
+    <nuclide ao="0.16858119241590927" name="Zr92" />
+    <nuclide ao="0.17084204805763867" name="Zr94" />
+    <nuclide ao="0.027523459986270902" name="Zr96" />
+    <nuclide ao="0.009861321684170964" name="Nb93" />
+    <nuclide ao="0.007140932859659811" name="O16" />
+    <nuclide ao="2.7128685532466637e-06" name="O17" />
+    <nuclide ao="1.4318792226687667e-05" name="O18" />
+  </material>
+  <material id="4" name="SS304">
+    <density units="g/cm3" value="8.03" />
+    <nuclide ao="0.00076778" name="Cr50" />
+    <nuclide ao="0.014806" name="Cr52" />
+    <nuclide ao="0.0016789" name="Cr53" />
+    <nuclide ao="0.00041791" name="Cr54" />
+    <nuclide ao="0.003462" name="Fe54" />
+    <nuclide ao="0.054345" name="Fe56" />
+    <nuclide ao="0.0012551" name="Fe57" />
+    <nuclide ao="0.00016703" name="Fe58" />
+    <nuclide ao="0.0017604" name="Mn55" />
+    <nuclide ao="0.0056089" name="Ni58" />
+    <nuclide ao="0.0021605" name="Ni60" />
+    <nuclide ao="9.3917e-05" name="Ni61" />
+    <nuclide ao="0.00029945" name="Ni62" />
+    <nuclide ao="7.6261e-05" name="Ni64" />
+    <nuclide ao="0.00095281" name="Si28" />
+    <nuclide ao="4.8381e-05" name="Si29" />
+    <nuclide ao="3.1893e-05" name="Si30" />
+  </material>
+  <material id="5" name="helium" temperature="768.5">
+    <density units="g/cm3" value="0.0019324" />
+    <nuclide ao="1.0" name="He4" />
+  </material>
+  <material id="6" name="h2o" temperature="583.7">
+    <density units="g/cm3" value="0.7035132943032633" />
+    <nuclide ao="1.9980012918146297" name="H1" />
+    <nuclide ao="0.9990006459073149" name="O16" />
+    <nuclide ao="0.000198071981170198" name="B10" />
+    <nuclide ao="0.0008012821115149585" name="B11" />
+    <sab name="c_H_in_H2O" />
+  </material>
+  <material depletable="true" id="7" name="poisoned_pellet" temperature="924">
+    <density units="g/cm3" value="10.206122593098252" />
+    <nuclide ao="0.023772215420889087" name="U235" />
+    <nuclide ao="0.9154058430597161" name="U238" />
+    <nuclide ao="2.0608219415193947" name="O16" />
+    <nuclide ao="0.0002432877660775792" name="Gd152" />
+    <nuclide ao="0.0026518366502456133" name="Gd154" />
+    <nuclide ao="0.01800329468974086" name="Gd155" />
+    <nuclide ao="0.02490050285804023" name="Gd156" />
+    <nuclide ao="0.019037267695570573" name="Gd157" />
+    <nuclide ao="0.03021634054683534" name="Gd158" />
+    <nuclide ao="0.026591352832279407" name="Gd160" />
+  </material>
+  <material depletable="true" id="8" name="borosilicate" temperature="900.1">
+    <density units="g/cm3" value="2.26" />
+    <nuclide ao="0.025665277376130714" name="Al27" />
+    <nuclide ao="0.6879868095166806" name="O16" />
+    <nuclide ao="0.0002613710906602155" name="O17" />
+    <nuclide ao="0.0013795234499290915" name="O18" />
+    <nuclide ao="0.2503518239213857" name="Si28" />
+    <nuclide ao="0.012711944437610525" name="Si29" />
+    <nuclide ao="0.008379671648612896" name="Si30" />
+    <nuclide ao="0.0028457471918835685" name="B10" />
+    <nuclide ao="0.01041783136710679" name="B11" />
+  </material>
+</materials>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<settings>
+  <run_mode>eigenvalue</run_mode>
+  <particles>10000</particles>
+  <batches>120</batches>
+  <inactive>40</inactive>
+  <generations_per_batch>1</generations_per_batch>
+  <source strength="1.0">
+    <space origin="0.0 0.0 0.0" type="spherical">
+      <r parameters="0.0 2.5 2" type="powerlaw" />
+      <cos_theta parameters="-1.0 1.0" type="uniform" />
+      <phi parameters="0.0 6.283185307179586" type="uniform" />
+    </space>
+    <angle type="isotropic" />
+  </source>
+  <photon_transport>false</photon_transport>
+  <temperature_default>900</temperature_default>
+  <temperature_method>interpolation</temperature_method>
+</settings>
