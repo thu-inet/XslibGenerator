@@ -3,6 +3,7 @@ import shutil
 import json
 import re
 
+from typing import List
 from pathlib import Path
 from contextlib import contextmanager
 
@@ -139,8 +140,8 @@ class DatabaseManager:
             f.write(data)
 
     @classmethod
-    def get_xslib_list(cls):
-        return cls.data
+    def get_xslib_list(cls) -> List[dict]:
+        return cls.data.copy()
 
     @classmethod
     def add_xslib(cls, task, path, template_render_parameters, script_render_parameters):
@@ -170,19 +171,30 @@ class DatabaseManager:
 
     @classmethod
     def set_xslib(cls, task, name, value):
+
         if task not in [xslib['task'] for xslib in cls.data]:
             raise ValueError(f"Task {task} does not exist.")
+
         xslib = [xslib for xslib in cls.data if xslib['task'] == task][0]
+        if name not in xslib.keys():
+            raise ValueError(f"Name {name} does not exist.")
+        
         if name == 'task':
             if value in [xslib['task'] for xslib in cls.data]:
                 raise ValueError(f"Task {value} already exists.")
             xslib[name] = value
             shutil.move(xslib['path'], Path(cls.database.path).parent / f"{value}")
             xslib['path'] = str(Path(cls.database.path).parent / f"{value}")
-        if name == 'path':
+        elif name == 'path':
             raise ValueError("Path should be changed according to the task.")
-        if name not in xslib.keys():
-            raise ValueError(f"Name {name} does not exist.")
+        else:
+            if isinstance(xslib[name], float):
+                value = float(value)
+            elif isinstance(xslib[name], int):
+                value = int(value)
+            else:
+                pass
+
         xslib[name] = value
         data = json.dumps(cls.data, indent=2)
         with open(cls.libdir, 'w') as f:

@@ -84,8 +84,8 @@ def remove(name, remove_all_files):
         return
 
     database_list = Manager.get_database_list()
-    matched_database_list = [database for database in database_list if re.search(name, database.name)]
-    unmatched_database_list = [database for database in database_list if not re.search(name, database.name)]
+    matched_database_list = [database for database in database_list if re.fullmatch(name, database.name)]
+    unmatched_database_list = [database for database in database_list if not re.fullmatch(name, database.name)]
 
     for database in matched_database_list:
         if remove_all_files and Path(database.path).exists():
@@ -102,7 +102,7 @@ def list(name):
     if name == '':
         matched_database_list = database_list
     else:
-        matched_database_list = [database for database in database_list if re.search(name, database.name)]
+        matched_database_list = [database for database in database_list if re.fullmatch(name, database.name)]
 
     for database in matched_database_list:
         print("|================================================================================|")
@@ -143,7 +143,7 @@ db.add_command(template)
 def script():
     _, database = Manager.get_current_database()
     os.system(f'vi {database.script}')
-db.add_command(template)
+db.add_command(script)
 
 @click.command(help='Rebuild the database.')
 def rebuild():
@@ -165,20 +165,21 @@ def rebuild():
     template_parameter_lines = []
     for parameter in template_parameters:
         for i, line in enumerate(template_lines):
-            if re.search(f"{parameter['type']}_{parameter['name']}", line):
+            if f"{parameter['type']}_{parameter['name']}" in line:
                 if parameter['type'] == 'int':
-                    template = re.sub("{{\s*" + f"{parameter['type']}_{parameter['name']}" + "\s*}}", "(-?\d+)", line)
+                    template = re.sub("{{\s*" + f"{parameter['type']}_{parameter['name']}" + "\s*}}", r"(-?\d+)", line)
                 elif parameter['type'] == 'float':
-                    template = re.sub("{{\s*" + f"{parameter['type']}_{parameter['name']}" + "\s*}}", "(-?[0-9\.]+)", line)
+                    template = re.sub("{{\s*" + f"{parameter['type']}_{parameter['name']}" + "\s*}}", r"([0-9\.\-]+)", line)
                 else:
-                    template = re.sub("{{\s*" + f"{parameter['type']}_{parameter['name']}" + "\s*}}", "(\S+)", line)
+                    template = re.sub("{{\s*" + f"{parameter['type']}_{parameter['name']}" + "\s*}}", r"(\S+)", line)
                 template_parameter_lines.append((i, parameter, template))
+    # print(template_parameter_lines)
 
     # find all lines that contain parameters
     script_parameter_lines = []
     for parameter in script_parameters:
         for i, line in enumerate(script_lines):
-            if re.search(f"{parameter['type']}_{parameter['name']}", line):
+            if re.fullmatch(f"{parameter['type']}_{parameter['name']}", line):
                 if parameter['type'] == 'int':
                     template = re.sub("{{\s*" + f"{parameter['type']}_{parameter['name']}" + "\s*}}", "(-?\d+)", line)
                 elif parameter['type'] == 'float':
@@ -195,17 +196,29 @@ def rebuild():
             rendered_template_lines = f.readlines()
         template_render_parameters = {}
         for i, parameter, template in template_parameter_lines:
-            result = re.match(template, rendered_template_lines[i])
+            result = re.fullmatch(template, rendered_template_lines[i])
             if result is not None:
-                template_render_parameters[parameter['name']] = result.group(1)
+                if parameter['type'] == 'int':
+                    value = int(result.group(1))
+                elif parameter['type'] == 'float':
+                    value = float(result.group(1))
+                else:
+                    pass
+                template_render_parameters[parameter['type'] + '_' + parameter['name']] = value
                 
         with open(folder / Path(database.script).name, 'r') as f:
             rendered_script_lines = f.readlines()
         script_render_parameters = {}
         for i, parameter, template in script_parameter_lines:
-            result = re.match(template, rendered_script_lines[i])
+            result = re.fullmatch(template, rendered_script_lines[i])
             if result is not None:
-                script_render_parameters[parameter['name']] = result.group(1)
+                if parameter['type'] == 'int':
+                    value = int(result.group(1))
+                elif parameter['type'] == 'float':
+                    value = float(result.group(1))
+                else:
+                    pass
+                script_render_parameters[parameter['type'] + '_' + parameter['name']] = value
         DatabaseManager.add_xslib(folder.name, str(folder), template_render_parameters, {})
 db.add_command(rebuild)
 
@@ -224,7 +237,7 @@ db.add_command(create)
 def remove(task, remove_all_files):
     _, database = Manager.get_current_database()
     xslib_list = DatabaseManager().get_xslib_list()
-    matched_xslib_list = [xslib for xslib in xslib_list if re.search(task, xslib['task'])]
+    matched_xslib_list = [xslib for xslib in xslib_list if re.fullmatch(task, xslib['task'])]
 
     for xslib in matched_xslib_list:
         if remove_all_files:
@@ -241,7 +254,8 @@ def config(task, parameter):
     if '=' not in parameter or parameter.count('=') > 1:
         raise ValueError(f"Parameter should be in the format of 'name=value'.")
     name, value = parameter.split('=')
-    matched_xslib = [xslib for xslib in DatabaseManager.get_xslib_list() if re.search(task, xslib['task'])]
+    value = value.strip("\"").strip("\'")
+    matched_xslib = [xslib for xslib in DatabaseManager.get_xslib_list() if re.fullmatch(task, xslib['task'])]
     for xslib in matched_xslib:
         DatabaseManager().set_xslib(xslib['task'], name, value)
 db.add_command(config)
@@ -255,7 +269,7 @@ def list(task):
     if task == '':
         matched_xslib_list = xslib_list
     else:
-        matched_xslib_list = [xslib for xslib in xslib_list if re.search(task, xslib['task'])]
+        matched_xslib_list = [xslib for xslib in xslib_list if re.fullmatch(task, xslib['task'])]
     print("|================================================================================|")
     print(f"|Database: {database.name:<70s}|")
     print(f"|Path    : {database.path:<70s}|")
@@ -319,7 +333,7 @@ def run(task, inputs_template, inputs_script):
 
     jinja_template = jinja2.Template(Path(database.template).read_text())
     rendered_template = jinja_template.render(template_render_parameters)
-    
+
     jinja_script = jinja2.Template(Path(database.script).read_text())
     rendered_script = jinja_script.render(script_render_parameters)
 
@@ -344,6 +358,65 @@ def run(task, inputs_template, inputs_script):
     DatabaseManager.add_xslib(task, str(folderpath), template_render_parameters, script_render_parameters)
 db.add_command(run)
 
+@click.command(help='Interpolate the xslib.')
+@click.argument('task', type=str)
+@click.option('--inputs_template', '-it', type=str, help='The input parameters of the template.', required=False, multiple=True)
+@click.option('--inputs_script', '-is', type=str, help='The input parameters of the script.', required=False, multiple=True)
+def itpl(task, inputs_template, inputs_script):
+    
+    _, database = Manager.get_current_database()
+
+    if task in [xslib['task'] for xslib in DatabaseManager().get_xslib_list()]:
+        raise ValueError(f"Task {task} already exists. Please change the name.")
+
+    if len(inputs_template) != len(database.get_template_parameters()):
+        raise ValueError(f"The number of inputs_template does not match the number of parameters in the database.")
+
+    template_interpolate_parameters = {}
+    for inp, parameter in zip(inputs_template, database.get_template_parameters()):
+        if '=' in inp:
+            if inp[:inp.index('=')] != parameter['name']:
+                raise ValueError(f"Parameter {type + '_' + inp[:inp.index('=')]} does not match the parameter {parameter['name']}.")
+            value = inp[inp.index('=')+1:]
+        else:
+            value = inp
+        if parameter['type'] == 'int':
+            value = int(value)
+        elif parameter['type'] == 'float':
+            value = float(value)
+        else:
+            pass
+        template_interpolate_parameters[parameter['type'] + '_' + parameter['name']] = value
+
+    if len(inputs_script) != len(database.get_script_parameters()):
+        raise ValueError(f"The number of inputs_script does not match the number of parameters in the database.")
+
+    script_interpolate_parameters = {}
+    for inp, parameter in zip(inputs_script, database.get_script_parameters()):
+        if '=' in inp:
+            if inp[:inp.index('=')] != parameter['name']:
+                raise ValueError(f"Parameter {type + '_' + inp[:inp.index('=')]} does not match the parameter {parameter['name']}.")
+            value = inp[inp.index('=')+1:]
+        else:
+            value = inp
+
+        if parameter['type'] == 'int':
+            value = int(value)
+        elif parameter['type'] == 'float':
+            value = float(value)
+        else:
+            pass
+        script_interpolate_parameters[parameter['type'] + '_' + parameter['name']] = value
+
+    xslib_list = DatabaseManager().get_xslib_list()
+    for xslib in xslib_list:
+        weights_template = [(xslib[key]/val-1)**2 for key, val in template_interpolate_parameters.items()]
+        weights_script = [(xslib[key]/val-1)**2 for key, val in script_interpolate_parameters.items()]
+        print(xslib['task'], sum(weights_template), sum(weights_script))
+        # weights = [sum()**2  ]) for xslib in xslib_list]
+    # print(weights)
+    pass
+db.add_command(itpl)
 
 if __name__ == "__main__":
     cli()
