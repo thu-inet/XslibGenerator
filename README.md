@@ -143,41 +143,48 @@ echo ${powers[@]}
 
 系统分为两个层级。对基于同一个模型、但参数不同的单群截面库，它们将被统一管理，称为Database，为较低的层级；对于不同的模型对应的不同的Database，它们也被统一管理，为较高的层级。
 
-管理系统和上述单群截面库生成程序互不干扰。管理系统可以读取模板化的OpenMC文件，形成Database，然后根据用户输入参数，产生相应的OpenMC模型和xml输入卡，并记录这一组数据。然后应由截面库生成程序来产生截面库，但这一步还暂未实现。
+管理系统和上述单群截面库生成程序互不干扰。管理系统可以读取模板化的OpenMC文件以及脚本，形成Database，然后根据用户输入参数（模型的参数以及脚本中的参数），产生相应的OpenMC、xml输入卡和脚本，并记录这一组数据。然后会自动调用截面库生成程序来产生截面库。
 
 管理系统储存在codes/cli文件夹内，通过命令行交互。为了方便使用，在下载本库后，使用alias命令（linux系统）将脚本调用封装为更简单的命令：
 
 ```
-alias vlib="python the_absolute_path_to_viewlib_file/viewlib.py"
+echo alias vlib="python the_absolute_path_to_viewlib_file/viewlib.py" >> ~/.bashrc
+source ~/.bashrc
 ```
 
 以下展示管理系统的适用方法。
 
 ```
 vlib list # 查看所有database
-vlib list -n name # 查看某个database
-vlib create -n name -t template -p path # 创建新database，模板文件位置和文件夹位置 
-vlib remove -n name --remove_all_files y # 删除database和相应文件
+vlib list name # 查看某个database
+vlib create name -t template -s script -p path # 创建新database，模板文件位置、脚本文件位置和文件夹位置 
+vlib remove name --remove_all_files y # 删除database和相应文件
 ```
+
+模板和脚本文件只需要将里面的参数替换为```{{type_name}}```形式，type分为int、float和str。
+所有比较难表达的参数如矩阵都可以用str固定下来。两个文件不需要都在文件夹中，这两个文件会被复制在文件夹里。
+
 
 需要管理一个database，首先需要进入这个database，然后使用```vlib db```命令。
 
 ```
-vlib enter -n name  # 进入database
+vlib enter name  # 进入database
 vlib enter  # 关闭当前database
 ```
 
 ```
 vlib db template  # 打开template
-vlib db list -t task  # 查看算例
-vlib db remove -t task  # 删除算例
-vlib db run -t task -i x1 -i x2 -i x3  # 运行算例
+vlib db script  # 打开script
+vlib db rebuild  # 对这个数据库重建索引文件
+vlib db list task  # 查看算例
+vlib db config task key=value 修改算例参数
+vlib db remove task  # 删除算例
+vlib db create task  # 暂时还没有实现，计划实现插值功能后做交互式widzard
+vlib db run task -it x1 -it x2 -it x3 -is x4 -is x5  # 运行算例, it为模板参数，is为脚本参数，必须按顺序，可以显示写为'x1=0.1'的形式。
 ```
-
-模板文件只需要将里面的参数替换为```{{type_name}}```形式，type分为int、float和str。
-所有比较难表达的参数如矩阵都可以用str固定下来。
 
 目前examples里面有一个文件夹pin_database，已经做过一些测试了，基本功能没有问题。
 配置文件有files/manager.json以及每个database下的.libdir.json。如果手动管理文件可能会导致
 配置文件内容和实际文件不同引发报错，所以建议用命令来增加或者删除文件。
 
+如果系统出现崩溃：1.使用vlib init，不会删除任何文件，但是所有database都会丢失，需要手动添加会来；2.使用vlib remove name移除掉当前database，也不会删除任何文件，然后重新添加database，先vlib enter name进入数据库，再vlib rebuild重新建立索引。
