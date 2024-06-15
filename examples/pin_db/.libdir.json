@@ -1,0 +1,8 @@
+[
+  {
+    "task": "room",
+    "path": "/home/dodo/RSAG/zhangweij/openmc/NuitXsLibGenerator/examples/pin_db/room",
+    "pellet_temperature": "293.0",
+    "pellet_enrichment": "0.03"
+  }
+]

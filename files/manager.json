@@ -1,24 +1,11 @@
 {
   "database_list": [
     {
-      "name": "new",
-      "template": "/home/dodo/RSAG/zhangweij/openmc/NuitXsLibGenerator/test/tmp",
-      "path": "/home/dodo/RSAG/zhangweij/openmc/NuitXsLibGenerator/test",
-      "parameters": [
-        {
-          "name": "str_x1",
-          "type": "str"
-        },
-        {
-          "name": "int_x2",
-          "type": "int"
-        },
-        {
-          "name": "float_x3",
-          "type": "float"
-        }
-      ]
+      "name": "pindb",
+      "template": "/home/dodo/RSAG/zhangweij/openmc/NuitXsLibGenerator/examples/pin_db/.template.py",
+      "script": "/home/dodo/RSAG/zhangweij/openmc/NuitXsLibGenerator/examples/pin_db/.script.sh",
+      "path": "/home/dodo/RSAG/zhangweij/openmc/NuitXsLibGenerator/examples/pin_db"
     }
   ],
-  "current_db": "new"
+  "current_db": "pindb"
 }

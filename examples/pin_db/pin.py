@@ -12,8 +12,8 @@ import openmc.source
 pellet_diameter = 0.819
 pellet_height = 10
 pellet_density = 10.4
-pellet_temperature = 900.0
-pellet_abundance = 0.0318  # 富集度1.8%换算
+pellet_temperature = {{float_pellet_temperature}}
+pellet_abundance = {{float_pellet_enrichment}}  # 富集度1.8%换算
 
 clad_inner_diameter = 8.36 * 0.1
 clad_outer_diameter = 9.50 * 0.1
@@ -118,6 +118,7 @@ tallies.export_to_xml()
 
 model = openmc.model.Model(geom, mats, settings)
 model.export_to_xml()
+
 
 
 

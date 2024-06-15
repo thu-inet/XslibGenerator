@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 <materials>
-  <material depletable="true" id="1" name="pellet" temperature="900.0" volume="5.268144574786358">
+  <material depletable="true" id="1" name="pellet" temperature="293.0" volume="5.268144574786358">
     <density units="g/cm3" value="10.4" />
-    <nuclide ao="0.0318" name="U235" />
-    <nuclide ao="0.9682" name="U238" />
+    <nuclide ao="0.03" name="U235" />
+    <nuclide ao="0.97" name="U238" />
     <nuclide ao="2.0" name="O16" />
   </material>
   <material id="2" name="clad" temperature="293">
